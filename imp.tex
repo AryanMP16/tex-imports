@@ -1,0 +1,40 @@
+%This is the LaTeX setup I always use!
+%Note: tikz-feynman requires LuaLaTeX
+
+\documentclass{article}
+
+%packages
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{tikz-feynman}
+\usepackage{multicol}
+\usepackage[margin=5em]{geometry}
+\usepackage{pagecolor}
+\usepackage{fontsize}
+\usepackage{mathtools}
+
+%Specifications
+\pagecolor{black}
+\color{white}
+\changefontsize[12pt]{11pt}
+
+%Commands
+\newcommand{\assignmenttitle}[2]{%
+    \begin{center}
+        \begin{Large}#1\end{Large}\\
+        \begin{Large}#2\end{Large}\\
+        Aryan M. Pour
+    \end{center}
+}
+\newcommand{\spinor}[2]{%
+    \begin{pmatrix}
+        #1 \\ #2
+    \end{pmatrix}
+}
+\newcommand{\thm}[1]{%
+  \begin{center}\noindent\fbox{\textit{Thm.} #1}\end{center}
+}
