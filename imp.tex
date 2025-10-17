@@ -25,6 +25,7 @@
 \usetikzlibrary{braids}
 \usepackage{titlesec}
 \usepackage{graphicx}
+\usepackage{contour}
 \usepackage{simpler-wick}
 \usetikzlibrary{cd}
 
@@ -83,3 +84,11 @@
 \renewcommand{\i}{\text{\reflectbox{\rotatebox[origin=c]{180}{1}}}}
 \newcommand{\D}{\mathcal{D}}
 \newcommand{\cat}{\mathcal{C}}
+
+\DeclareMathOperator*{\sumint}{%
+\mathchoice%
+  {\ooalign{$\displaystyle\sum$\cr\hidewidth$\displaystyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.14\height}{\scalebox{.7}{$\textstyle\sum$}}\cr\hidewidth$\textstyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\int$\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\int$\cr}}
+}
